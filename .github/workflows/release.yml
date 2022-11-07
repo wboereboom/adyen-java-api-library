@@ -16,4 +16,4 @@ jobs:
           java-version: 11
           distribution: adopt
       - name: Release with Maven
-        run: mvn deploy
+        run: mvn deploy -f pom.xml
