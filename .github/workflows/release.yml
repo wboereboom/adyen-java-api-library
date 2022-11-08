@@ -15,5 +15,9 @@ jobs:
         with:
           java-version: 11
           distribution: adopt
+          server-id: ossrh
+          server-username: user
+          server-password: pass
+          gpg-passphrase: blablablatest
       - name: Release with Maven
         run: mvn deploy -f pom.xml
